@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "chocolate-sculpted-evening-gown",
+    "title": "Chocolate Sculpted Gown",
+    "category": "Special Occasions",
+    "description": "A dramatic evening silhouette with sculptural shoulder detailing and a flowing train.",
+    "images": [
+      {
+        "src": "/images/chocolate-sculpted-evening-gown.webp",
+        "alt": "Woman wearing a chocolate brown fitted evening gown with sculpted shoulders",
+        "width": 720,
+        "height": 887
+      }
+    ]
+  },
+  {
+    "slug": "ivory-lace-dress",
+    "title": "Ivory Lace Elegance",
+    "category": "Women",
+    "description": "Delicate lace, a defined waist and a soft ivory palette for an expressive occasion look.",
+    "images": [
+      {
+        "src": "/images/ivory-lace-dress.webp",
+        "alt": "Ivory long sleeve lace dress with a structured bodice",
+        "width": 736,
+        "height": 735
+      }
+    ]
+  },
+  {
+    "slug": "golden-puff-sleeve-jumpsuit",
+    "title": "Golden Statement Jumpsuit",
+    "category": "Custom Designs",
+    "description": "A warm golden palette meets statement sleeves and a clean, wide leg silhouette.",
+    "images": [
+      {
+        "src": "/images/golden-puff-sleeve-jumpsuit.webp",
+        "alt": "Golden yellow jumpsuit with puff sleeves and wide legs",
+        "width": 513,
+        "height": 775
+      }
+    ]
+  },
+  {
+    "slug": "scarlet-peplum-dress",
+    "title": "Scarlet Peplum",
+    "category": "Women",
+    "description": "A bold red design with a fitted bodice and playful peplum shape.",
+    "images": [
+      {
+        "src": "/images/scarlet-peplum-dress.webp",
+        "alt": "Scarlet sleeveless dress displayed on a mannequin with a peplum skirt",
+        "width": 736,
+        "height": 841
+      }
+    ]
+  },
+  {
+    "slug": "embellished-occasion-gown",
+    "title": "Embellished Occasion Gown",
+    "category": "Special Occasions",
+    "description": "An elegant fitted silhouette with richly embellished details and a delicate shoulder line.",
+    "images": [
+      {
+        "src": "/images/embellished-occasion-gown.webp",
+        "alt": "Woman wearing an embellished off shoulder occasion gown",
+        "width": 519,
+        "height": 978
+      }
+    ]
+  },
+  {
+    "slug": "ivory-mermaid-gown",
+    "title": "Ivory Mermaid Gown",
+    "category": "Special Occasions",
+    "description": "A graceful ivory silhouette with an embellished neckline and sweeping mermaid train.",
+    "images": [
+      {
+        "src": "/images/ivory-mermaid-gown.webp",
+        "alt": "Woman wearing an ivory mermaid gown with a long train",
+        "width": 735,
+        "height": 910
+      }
+    ]
+  }
+]

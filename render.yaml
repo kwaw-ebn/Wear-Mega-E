@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: wear-mega-e
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: SITE_URL
+        sync: false
+      - key: SITE_NOINDEX
+        value: "true"

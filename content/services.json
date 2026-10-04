@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "custom-fashion-design",
+    "title": "Custom Fashion Design",
+    "description": "Bring your inspiration, preferred silhouette and occasion. Together, we can explore a design that reflects you.",
+    "benefits": [
+      "Personal style direction",
+      "Design consultation",
+      "Fabric discussion"
+    ]
+  },
+  {
+    "slug": "bespoke-outfits",
+    "title": "Bespoke Outfits",
+    "description": "Discuss clothing shaped around your measurements, comfort and personal preferences.",
+    "benefits": [
+      "Individual measurements",
+      "Thoughtful finishing",
+      "Fitting appointments"
+    ]
+  },
+  {
+    "slug": "alterations-fittings",
+    "title": "Alterations & Fittings",
+    "description": "Discuss adjustments that improve the fit and comfort of an existing garment.",
+    "benefits": ["Fit review", "Adjustment advice", "Appointment planning"]
+  },
+  {
+    "slug": "special-occasion-wear",
+    "title": "Special Occasion Wear",
+    "description": "Explore an expressive look for celebrations, ceremonies and memorable moments.",
+    "benefits": ["Occasion styling", "Silhouette guidance", "Timeline planning"]
+  },
+  {
+    "slug": "corporate-group-outfits",
+    "title": "Corporate & Group Outfits",
+    "description": "Start a conversation about coordinated designs for a team or group.",
+    "benefits": [
+      "Coordinated direction",
+      "Group requirements",
+      "Fabric options"
+    ]
+  },
+  {
+    "slug": "fashion-consultation",
+    "title": "Fashion Consultation",
+    "description": "Find a starting point for your next outfit with a conversation about style, fabric and fit.",
+    "benefits": ["Inspiration review", "Practical guidance", "Next steps"]
+  }
+]
