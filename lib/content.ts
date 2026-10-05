@@ -4,7 +4,6 @@ import posts from "@/content/blog.json";
 export { gallery, services, posts };
 export const categories = [
   "All",
-  "Men",
   "Women",
   "Traditional Wear",
   "Corporate",

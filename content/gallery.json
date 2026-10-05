@@ -82,5 +82,103 @@
         "height": 910
       }
     ]
+  },
+  {
+    "slug": "sunset-kente-dress",
+    "title": "Sunset Kente Dress",
+    "category": "Traditional Wear",
+    "description": "An orange embellished bodice paired with a vibrant patterned skirt.",
+    "images": [
+      {
+        "src": "/images/sunset-kente-dress.webp",
+        "alt": "Woman wearing an orange embellished bodice and colourful kente patterned skirt",
+        "width": 736,
+        "height": 888
+      }
+    ]
+  },
+  {
+    "slug": "emerald-traditional-dress",
+    "title": "Emerald Traditional Dress",
+    "category": "Traditional Wear",
+    "description": "A rich green bodice and patterned skirt create an elegant traditional look.",
+    "images": [
+      {
+        "src": "/images/emerald-traditional-dress.webp",
+        "alt": "Woman wearing a green fitted bodice and green patterned traditional skirt",
+        "width": 498,
+        "height": 886
+      }
+    ]
+  },
+  {
+    "slug": "rose-kente-dress",
+    "title": "Rose Kente Dress",
+    "category": "Traditional Wear",
+    "description": "A soft pink structured bodice complements a bright patterned skirt.",
+    "images": [
+      {
+        "src": "/images/rose-kente-dress.webp",
+        "alt": "Woman wearing a pink structured bodice and pink and gold patterned skirt",
+        "width": 583,
+        "height": 876
+      }
+    ]
+  },
+  {
+    "slug": "ruby-traditional-gown",
+    "title": "Ruby Traditional Gown",
+    "category": "Traditional Wear",
+    "description": "A ruby red bodice meets a long patterned skirt for a striking celebration look.",
+    "images": [
+      {
+        "src": "/images/ruby-traditional-gown.webp",
+        "alt": "Woman wearing a red off shoulder bodice and long patterned traditional skirt",
+        "width": 360,
+        "height": 640
+      }
+    ]
+  },
+  {
+    "slug": "plum-traditional-gown",
+    "title": "Plum Traditional Gown",
+    "category": "Traditional Wear",
+    "description": "A deep plum palette, shaped shoulders and a fitted silhouette make an expressive occasion look.",
+    "images": [
+      {
+        "src": "/images/plum-traditional-gown.webp",
+        "alt": "Woman wearing a fitted plum gown with shaped shoulder details",
+        "width": 563,
+        "height": 642
+      }
+    ]
+  },
+  {
+    "slug": "royal-blue-kente-gown",
+    "title": "Royal Blue Kente Gown",
+    "category": "Traditional Wear",
+    "description": "A flowing fitted silhouette brings together bold blue and golden patterned detail.",
+    "images": [
+      {
+        "src": "/images/royal-blue-kente-gown.webp",
+        "alt": "Woman wearing a floor length blue and gold patterned gown",
+        "width": 564,
+        "height": 755
+      }
+    ]
+  },
+  {
+    "slug": "sapphire-kente-dress",
+    "title": "Sapphire Kente Dress",
+    "category": "Traditional Wear",
+    "description": "A sculpted blue shoulder detail and vivid patterned skirt create a confident traditional look.",
+    "images": [
+      {
+        "src": "/images/sapphire-kente-dress.webp",
+        "alt": "Woman wearing a blue asymmetric bodice and colourful kente patterned skirt",
+        "width": 736,
+        "height": 920
+      }
+    ]
   }
 ]

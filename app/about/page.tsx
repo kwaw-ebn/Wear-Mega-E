@@ -33,7 +33,7 @@ export default function About() {
             in creativity.
           </h2>
           <p>
-            Wear Mega-E is a fashion design brand built around personal
+            Wear Mega-E is a women’s fashion design brand built around personal
             expression. We invite you to share the silhouettes, colours and
             details that speak to you, then explore how those ideas can come
             together.
@@ -46,8 +46,24 @@ export default function About() {
           </p>
           <h3>Our story</h3>
           <p>
-            The founder’s story and studio journey will be shared here once
-            confirmed by the team.
+            Wear Mega-E began with its founder’s passion for fashion and a desire
+            to turn creative ideas into beautifully made clothing. Her journey
+            started with practical training under a traditional seamstress,
+            where she learned the foundations of sewing and garment making.
+          </p>
+          <p>
+            After two years of learning the craft, she took the next step in her
+            professional development at Takoradi Technical University, where she
+            earned a Diploma in Fashion Design. Driven by the same passion, she
+            continued her education at the University of Education, Winneba,
+            earning her first degree.
+          </p>
+          <p>
+            This journey from hands-on apprenticeship to formal fashion education
+            shapes the approach behind Wear Mega-E: a blend of practical
+            craftsmanship, creative expression and thoughtful design for women.
+            Today, that passion continues through the brand’s promise:
+            “You Decide, We Design.”
           </p>
         </div>
       </section>
