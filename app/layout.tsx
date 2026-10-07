@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "Explore expressive fashion designs and start your personal design conversation with Wear Mega-E.",
-  robots: { index: process.env.SITE_NOINDEX === "false", follow: true },
+  robots: { index: process.env.SITE_NOINDEX !== "true", follow: true },
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
   icons: { icon: "/images/wear-mega-e-logo.webp" },
 };
@@ -39,6 +39,7 @@ export default function RootLayout({
             url: site.url,
             logo: site.url + "/images/wear-mega-e-logo.webp",
             telephone: site.international,
+            areaServed: { "@type": "City", name: "Agona Swedru" },
           }}
         />
         <JsonLd

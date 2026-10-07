@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { localServices } from "@/lib/local-services";
 import Image from "next/image";
 import { PageIntro, Button, CTA } from "@/components/ui";
 import { services, gallery } from "@/lib/content";
@@ -60,7 +62,7 @@ export default function Services() {
           </section>
         ))}
       </div>
-      <CTA />
+      <section className="wrap section"><p className="eyebrow">AGONA SWEDRU, GHANA</p><h2>Explore our women’s fashion services.</h2><div className="service-grid">{localServices.map(s=><Link className="service-card" key={s.slug} href={`/${s.slug}`}><h3>{s.title}</h3><p>{s.description}</p><span className="text-link">Explore service ↗</span></Link>)}</div></section><CTA />
     </>
   );
 }

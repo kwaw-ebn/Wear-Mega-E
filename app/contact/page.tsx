@@ -34,8 +34,8 @@ export default function Contact() {
           <div className="contact-details">
             <h3>Visiting & appointments</h3>
             <p>
-              Please call or message to confirm the studio address and
-              appointment availability.
+              Our studio is in Agona Swedru, Ghana. Please call or message for
+              the exact directions and to confirm appointment availability.
             </p>
             <h3>Follow the inspiration</h3>
             <Socials />

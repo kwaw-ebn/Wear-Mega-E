@@ -12,4 +12,4 @@ services:
       - key: SITE_URL
         sync: false
       - key: SITE_NOINDEX
-        value: "true"
+        value: "false"

@@ -3,10 +3,11 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button, DesignCard, CTA } from "@/components/ui";
 import { gallery, services, posts } from "@/lib/content";
+import { localServices } from "@/lib/local-services";
 import { seo } from "@/lib/site";
 export const metadata = seo(
-  "Personal Fashion, Thoughtfully Designed",
-  "Discover expressive occasion wear and custom design inspiration. Explore the Wear Mega-E gallery and enquire about a look you love.",
+  "Fashion Designer in Agona Swedru",
+  "Wear Mega-E creates women’s bespoke outfits, traditional wear, custom dresses and uniforms in Agona Swedru, Ghana. Explore designs and enquire on WhatsApp.",
   "/",
 );
 export default function Home() {
@@ -14,15 +15,15 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">PERSONAL STYLE. THOUGHTFUL DESIGN.</p>
+          <p className="eyebrow">WOMEN’S FASHION · AGONA SWEDRU</p>
           <h1>
-            You decide.
-            <br />
-            We <em>design.</em>
+            Fashion designed<br />
+            around <em>you.</em>
           </h1>
           <p className="hero-description">
-            Your ideas, brought to life through thoughtful design and styles
-            created around you.
+            Your women’s fashion designer in Agona Swedru, Ghana. Bespoke
+            outfits, traditional wear, custom dresses and uniforms, shaped
+            around your ideas, fit and comfort.
           </p>
           <div className="hero-actions">
             <Button href="/gallery">Explore our designs</Button>
@@ -61,13 +62,13 @@ export default function Home() {
         <p className="eyebrow">A WARDROBE THAT FEELS LIKE YOU</p>
         <div>
           <h2>
-            Fashion begins with
-            <br />a little <em>imagination.</em>
+            Your style. Your vision.<br />Our <em>craft.</em>
           </h2>
           <p>
-            We believe a beautiful outfit starts with a conversation. Your
-            inspiration, your preferences and your personality guide the design
-            journey, from the first idea to the final fitting.
+            At Wear Mega-E in Agona Swedru, we create women’s fashion with
+            attention to style, fit, comfort and detail. Bring your inspiration
+            and let’s discuss the fabric, silhouette and finishing that suit you.
+            You Decide, We Design.
           </p>
           <Link className="text-link" href="/about">
             Discover our approach <ArrowUpRight size={17} />
@@ -157,7 +158,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="blog-grid">
-          {posts.map((p) => (
+          {posts.slice(0, 3).map((p) => (
             <Link href={`/blog/${p.slug}`} key={p.slug} className="blog-card">
               <div className="blog-image">
                 <Image
@@ -175,6 +176,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className="wrap section"><p className="eyebrow">WOMEN’S TAILORING IN AGONA SWEDRU</p><h2>Find your next outfit.</h2><div className="service-grid">{localServices.map(service=><Link className="service-card" key={service.slug} href={`/${service.slug}`}><h3>{service.title}</h3><p>{service.description}</p><span className="text-link">Explore this service ↗</span></Link>)}</div><p style={{marginTop:24}}>Based in Agona Swedru, Ghana. Call <a href="tel:+233261939295">0261939295</a> or <Link href="/contact">contact the studio</Link> to confirm directions and fitting appointments.</p></section>
       <CTA />
     </>
   );

@@ -1,3 +1,4 @@
+import { ArticleText } from "@/components/article-text";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -37,7 +38,7 @@ export default async function Article({
         <h1>{p.title}</h1>
         <p className="article-lead">{p.description}</p>
         <p className="small">
-          {p.author} · <time dateTime={p.date}>4 October 2026</time>
+          {p.author} · <time dateTime={p.date}>{new Date(p.date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}</time>
         </p>
         <div className="article-image">
           <Image
@@ -52,7 +53,7 @@ export default async function Article({
           {p.body.map(([h, t]) => (
             <section key={h}>
               <h2>{h}</h2>
-              <p>{t}</p>
+              <p><ArticleText text={t}/></p>
             </section>
           ))}
           <ShareDesign title={p.title} />

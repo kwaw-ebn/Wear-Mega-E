@@ -4,8 +4,8 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: process.env.SITE_NOINDEX === "false" ? "/" : undefined,
-      disallow: process.env.SITE_NOINDEX === "false" ? "/api/" : "/",
+      allow: process.env.SITE_NOINDEX !== "true" ? "/" : undefined,
+      disallow: process.env.SITE_NOINDEX !== "true" ? "/api/" : "/",
     },
     sitemap: site.url + "/sitemap.xml",
   };

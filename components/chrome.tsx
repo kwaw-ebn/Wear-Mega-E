@@ -148,6 +148,7 @@ export function Footer() {
             <br />
             Start a conversation.
           </p>
+          <p>Agona Swedru, Ghana</p>
           <a href={`tel:${site.international}`}>{site.phone}</a>
           <a href={whatsapp()}>Chat on WhatsApp ↗</a>
         </div>
