@@ -98,7 +98,7 @@ export default function Home() {
               <p className="eyebrow">FROM INSPIRATION TO EXPRESSION</p>
               <h2>Let’s make it personal.</h2>
             </div>
-            <Link className="text-link" href="/services">
+            <Link className="text-link" href="/fashion-design-services">
               Explore services <ArrowUpRight size={17} />
             </Link>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
             {services.slice(0, 3).map((s, i) => (
               <Link
                 key={s.slug}
-                href={`/services#${s.slug}`}
+                href={`/fashion-design-services#${s.slug}`}
                 className="service-card"
               >
                 <span className="service-number">0{i + 1}</span>
@@ -153,7 +153,7 @@ export default function Home() {
             <p className="eyebrow">THE DESIGN JOURNAL</p>
             <h2>A little inspiration.</h2>
           </div>
-          <Link className="text-link" href="/blog">
+          <Link className="text-link" href="/fashion-design-blog">
             Read the journal <ArrowUpRight size={17} />
           </Link>
         </div>

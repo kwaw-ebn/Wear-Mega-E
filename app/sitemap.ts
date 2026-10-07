@@ -6,9 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
     "/about",
-    "/services",
+    "/fashion-design-services",
     "/gallery",
-    "/blog",
+    "/fashion-design-blog",
     "/contact",
     "/privacy-policy",
     ...localServices.map(s=>'/'+s.slug),

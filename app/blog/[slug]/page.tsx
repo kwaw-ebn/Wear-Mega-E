@@ -31,7 +31,7 @@ export default async function Article({
   return (
     <>
       <article className="article wrap">
-        <Link className="text-link" href="/blog">
+        <Link className="text-link" href="/fashion-design-blog">
           ← Back to the journal
         </Link>
         <p className="eyebrow">{p.category}</p>

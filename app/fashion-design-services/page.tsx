@@ -5,9 +5,9 @@ import { PageIntro, Button, CTA } from "@/components/ui";
 import { services, gallery } from "@/lib/content";
 import { seo, whatsapp, JsonLd, site } from "@/lib/site";
 export const metadata = seo(
-  "Custom Sewing in Agona Swedru",
+  "Fashion Design Services in Agona Swedru",
   "Discuss custom fashion, bespoke outfits, alterations and special occasion designs with Wear Mega-E.",
-  "/services",
+  "/fashion-design-services",
 );
 export default function Services() {
   return (
@@ -55,7 +55,7 @@ export default function Services() {
                   name: s.title,
                   description: s.description,
                   provider: { "@type": "Organization", name: site.name },
-                  url: site.url + "/services#" + s.slug,
+                  url: site.url + "/fashion-design-services#" + s.slug,
                 }}
               />
             </div>

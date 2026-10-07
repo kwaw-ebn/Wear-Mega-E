@@ -1,7 +1,7 @@
 import { PageIntro } from "@/components/ui";
 import { seo } from "@/lib/site";
 export const metadata = seo(
-  "Privacy Policy",
+  "Privacy Policy and Website Enquiries",
   "How Wear Mega-E handles website enquiries, contact details and optional analytics.",
   "/privacy-policy",
 );

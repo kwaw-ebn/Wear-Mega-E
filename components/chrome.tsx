@@ -17,9 +17,9 @@ import { site, socialLinks, whatsapp } from "@/lib/site";
 const links = [
   ["Home", "/"],
   ["About", "/about"],
-  ["Services", "/services"],
+  ["Services", "/fashion-design-services"],
   ["Gallery", "/gallery"],
-  ["Blog", "/blog"],
+  ["Blog", "/fashion-design-blog"],
   ["Contact", "/contact"],
 ];
 export function Socials() {

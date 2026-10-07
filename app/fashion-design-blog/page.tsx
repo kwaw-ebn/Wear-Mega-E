@@ -3,9 +3,9 @@ import BlogBrowser from "@/components/blog-browser";
 import { seo } from "@/lib/site";
 import { posts, gallery } from "@/lib/content";
 export const metadata = seo(
-  "The Design Journal",
+  "Fashion Design Blog and Style Guides",
   "Practical advice on custom design consultations, occasion fabrics and clothing care from the Wear Mega-E journal.",
-  "/blog",
+  "/fashion-design-blog",
 );
 export default function Blog() {
   return (
