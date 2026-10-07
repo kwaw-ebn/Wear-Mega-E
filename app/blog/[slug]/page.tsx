@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = posts.find((p) => p.slug === slug);
   return p
-    ? seo(p.title, p.description, `/blog/${slug}`, `/images/${p.image}.webp`)
+    ? seo(p.seoTitle || p.title, p.description, `/blog/${slug}`, `/images/${p.image}.webp`)
     : { title: "Article not found" };
 }
 export default async function Article({
@@ -77,7 +77,7 @@ export default async function Article({
           headline: p.title,
           description: p.description,
           datePublished: p.date,
-          dateModified: p.date,
+          dateModified: p.updated || p.date,
           author: { "@type": "Organization", name: p.author },
           publisher: { "@type": "Organization", name: site.name },
           image: site.url + "/images/" + p.image + ".webp",

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { DM_Sans, Italiana } from "next/font/google";
+const sans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-sans", display: "swap" });
+const display = Italiana({ subsets: ["latin"], weight: "400", variable: "--font-display", display: "swap" });
 import { Header, Footer, FloatingWhatsApp } from "@/components/chrome";
 import { site, JsonLd } from "@/lib/site";
 import "./globals.css";
@@ -23,7 +26,7 @@ export default function RootLayout({
   const id = process.env.NEXT_PUBLIC_GA_ID;
   return (
     <html lang="en">
-      <body>
+      <body className={`${sans.variable} ${display.variable}`}>
         <a className="skip-link" href="#main">
           Skip to content
         </a>

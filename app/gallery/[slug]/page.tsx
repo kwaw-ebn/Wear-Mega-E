@@ -62,6 +62,14 @@ export default async function Design({
           <ShareDesign title={d.title} />
         </div>
       </section>
+      <section className="wrap section article-body">
+        {d.details.map(([heading, text]) => (
+          <section key={heading}><h2>{heading}</h2><p>{text}</p></section>
+        ))}
+        <p>Explore <Link className="text-link" href={d.category === "Traditional Wear" ? "/traditional-wear-agona-swedru" : "/custom-dresses-agona-swedru"}>our custom sewing services</Link>,
+        read the <Link className="text-link" href="/blog/choosing-fabric-for-special-occasions">fabric selection guide</Link>,
+        or <Link className="text-link" href="/contact">contact the studio</Link> to plan your fitting.</p>
+      </section>
       <section className="wrap section">
         <div className="project-nav">
           {index > 0 ? (

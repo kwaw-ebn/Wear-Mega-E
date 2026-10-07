@@ -5,7 +5,7 @@ import { PageIntro, Button, CTA } from "@/components/ui";
 import { services, gallery } from "@/lib/content";
 import { seo, whatsapp, JsonLd, site } from "@/lib/site";
 export const metadata = seo(
-  "Design Services",
+  "Custom Sewing in Agona Swedru",
   "Discuss custom fashion, bespoke outfits, alterations and special occasion designs with Wear Mega-E.",
   "/services",
 );

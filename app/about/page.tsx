@@ -2,7 +2,7 @@ import Image from "next/image";
 import { PageIntro, CTA } from "@/components/ui";
 import { seo } from "@/lib/site";
 export const metadata = seo(
-  "Our Approach",
+  "About Wear Mega-E: Fashion Designer in Agona Swedru",
   "Discover the Wear Mega-E approach: personal expression, thoughtful design and a collaborative journey from idea to outfit.",
   "/about",
 );

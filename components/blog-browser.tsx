@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { posts, gallery } from "@/lib/content";
-export default function BlogBrowser() {
+type PostSummary = { slug: string; title: string; description: string; category: string; image: string; imageAlt: string };
+export default function BlogBrowser({ posts }: { posts: PostSummary[] }) {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState("All");
   const items = posts.filter(
@@ -41,7 +41,7 @@ export default function BlogBrowser() {
             <div className="blog-image">
               <Image
                 src={`/images/${p.image}.webp`}
-                alt={gallery.find((d) => d.slug === p.image)!.images[0].alt}
+                alt={p.imageAlt}
                 fill
                 sizes="(max-width:700px) 90vw, 30vw"
               />

@@ -4,7 +4,7 @@ export const site = {
   tagline: "You Decide, We Design",
   phone: "0261939295",
   international: "+233261939295",
-  url: (process.env.SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
+  url: (process.env.SITE_URL || "https://wear-mega-e.onrender.com").replace(/\/$/, ""),
 };
 export const socialLinks = {
   facebook: "",

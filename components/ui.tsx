@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { gallery } from "@/lib/content";
+import type { gallery } from "@/lib/content";
 import { whatsapp } from "@/lib/site";
 export function Button({
   href,
@@ -36,7 +36,7 @@ export function PageIntro({
     </section>
   );
 }
-export function DesignCard({ design }: { design: (typeof gallery)[number] }) {
+export function DesignCard({ design }: { design: Pick<(typeof gallery)[number], "slug" | "title" | "category" | "images"> }) {
   const im = design.images[0];
   return (
     <Link className="design-card" href={`/gallery/${design.slug}`}>

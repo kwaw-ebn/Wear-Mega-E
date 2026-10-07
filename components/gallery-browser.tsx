@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
-import { categories, gallery } from "@/lib/content";
+import type { gallery } from "@/lib/content";
+type DesignSummary = Pick<(typeof gallery)[number], "slug" | "title" | "category" | "images">;
 import { DesignCard } from "./ui";
-export default function GalleryBrowser() {
+export default function GalleryBrowser({ gallery, categories }: { gallery: DesignSummary[]; categories: string[] }) {
   const [category, setCategory] = useState("All");
   const items = gallery.filter(
     (d) => category === "All" || d.category === category,

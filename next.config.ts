@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 const config: NextConfig = {
   poweredByHeader: false,
+  compress: true,
+  experimental: { optimizePackageImports: ["lucide-react", "react-icons/fa6"] },
   async headers() {
     return [
       {
