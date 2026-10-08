@@ -58,7 +58,7 @@ export default async function Article({
                 <figure style={{ margin: "28px 0 8px" }}>
                   <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", background: "var(--cream)" }}>
                     <Image
-                      src={["/images/sunset-kente-dress.webp", "/images/ivory-lace-dress.webp", "/images/golden-puff-sleeve-jumpsuit.webp", "/images/ivory-mermaid-gown.webp"][index]}
+                      src={["/images/wear-mega-e-blog-illustration-1.webp", "/images/wear-mega-e-blog-illustration-2.webp", "/images/wear-mega-e-blog-illustration-3.webp", "/images/wear-mega-e-blog-illustration-4.webp"][index]}
                       alt={[
                         "African-inspired patterned dress for traditional fashion inspiration in Agona Swedru",
                         "Special occasion women's dress showing fabric and styling details",
