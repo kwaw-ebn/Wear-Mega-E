@@ -50,10 +50,36 @@ export default async function Article({
           />
         </div>
         <div className="article-body">
-          {p.body.map(([h, t]) => (
+          {p.body.map(([h, t], index) => (
             <section key={h}>
               <h2>{h}</h2>
               <p><ArticleText text={t}/></p>
+              {slug === "custom-african-print-dresses-agona-swedru" && index < 4 && (
+                <figure style={{ margin: "28px 0 8px" }}>
+                  <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", background: "var(--cream)" }}>
+                    <Image
+                      src={["/images/sunset-kente-dress.webp", "/images/ivory-lace-dress.webp", "/images/golden-puff-sleeve-jumpsuit.webp", "/images/ivory-mermaid-gown.webp"][index]}
+                      alt={[
+                        "African-inspired patterned dress for traditional fashion inspiration in Agona Swedru",
+                        "Special occasion women's dress showing fabric and styling details",
+                        "Women's custom fashion outfit with statement sleeves for design inspiration",
+                        "Tailored occasion gown illustrating silhouette and fitting choices"
+                      ][index]}
+                      fill
+                      sizes="(max-width: 760px) 90vw, 710px"
+                      style={{ objectFit: "cover", objectPosition: "center 25%" }}
+                    />
+                  </div>
+                  <figcaption style={{ color: "var(--muted)", fontSize: 12, marginTop: 10 }}>
+                    {[
+                      "African-inspired dress inspiration from the Wear Mega-E gallery.",
+                      "Consider the occasion and fabric when choosing your design.",
+                      "Explore sleeves, silhouettes and custom styling possibilities.",
+                      "Discuss measurements and fitting details before ordering."
+                    ][index]}
+                  </figcaption>
+                </figure>
+              )}
             </section>
           ))}
           <ShareDesign title={p.title} />
