@@ -162,8 +162,8 @@ export default function Home() {
             <Link href={`/blog/${p.slug}`} key={p.slug} className="blog-card">
               <div className="blog-image">
                 <Image
-                  src={`/images/${p.image}.webp`}
-                  alt={gallery.find((d) => d.slug === p.image)!.images[0].alt}
+                  src={p.slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-custom-african-print-featured_Agona_Swedru.png" : `/images/${p.image}.webp`}
+                  alt={gallery.find((d) => d.slug === p.image)?.images[0].alt || p.title}
                   fill
                   sizes="(max-width:700px) 90vw, 30vw"
                 />
