@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = posts.find((p) => p.slug === slug);
   return p
-    ? seo(p.seoTitle || p.title, p.description, `/blog/${slug}`, slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-custom-african-print-featured_Agona_Swedru.png" : `/images/${p.image}.webp`)
+    ? seo(p.seoTitle || p.title, p.description, `/blog/${slug}`, slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`)
     : { title: "Article not found" };
 }
 export default async function Article({
@@ -42,7 +42,7 @@ export default async function Article({
         </p>
         <div className="article-image">
           <Image
-            src={slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-custom-african-print-featured_Agona_Swedru.png" : `/images/${p.image}.webp`}
+            src={slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
             alt={slug === "custom-african-print-dresses-agona-swedru" ? "Woman wearing an African print skirt and red cardigan, featured in Wear Mega-E fashion blog" : gallery.find((d) => d.slug === p.image)!.images[0].alt}
             fill
             priority
@@ -106,7 +106,7 @@ export default async function Article({
           dateModified: p.updated || p.date,
           author: { "@type": "Organization", name: p.author },
           publisher: { "@type": "Organization", name: site.name },
-          image: site.url + (slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-custom-african-print-featured_Agona_Swedru.png" : "/images/" + p.image + ".webp"),
+          image: site.url + (slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : "/images/" + p.image + ".webp"),
           mainEntityOfPage: site.url + "/blog/" + slug,
         }}
       />
