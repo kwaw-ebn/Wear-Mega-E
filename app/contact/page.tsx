@@ -30,6 +30,7 @@ export default function Contact() {
           <a className="contact-phone" href={`tel:${site.international}`}>
             {site.phone}
           </a>
+          <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
           <Button href={whatsapp()}>Chat on WhatsApp</Button>
           <div className="contact-details">
             <h3>Visiting & appointments</h3>
@@ -57,7 +58,7 @@ export default function Contact() {
             separately.</p>
             <h3>Follow the inspiration</h3>
             <Socials />
-            <p className="small">Social profile links will be added soon.</p>
+            <p className="small">Follow Wear Mega-E on social media.</p>
           </div>
         </div>
         <div>
