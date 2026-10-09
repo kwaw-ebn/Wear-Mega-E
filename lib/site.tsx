@@ -7,8 +7,8 @@ export const site = {
   url: (process.env.SITE_URL || "https://wear-mega-e.onrender.com").replace(/\/$/, ""),
 };
 export const socialLinks = {
-  facebook: "",
-  instagram: "",
+  facebook: "https://www.facebook.com/profile.php?id=100087323353556",
+  instagram: "https://www.instagram.com/peggy_gyan/",
   tiktok: "",
   youtube: "",
   linkedin: "",
