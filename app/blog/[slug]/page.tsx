@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = posts.find((p) => p.slug === slug);
   return p
-    ? seo(p.seoTitle || p.title, p.description, `/blog/${slug}`, slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`)
+    ? seo(p.seoTitle || p.title, p.description, `/blog/${slug}`, slug === "corporate-wear-for-women-ghana" ? "/images/womens-tailoring-services-agona-swedru.jpg" : slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`)
     : { title: "Article not found" };
 }
 export default async function Article({
@@ -42,8 +42,8 @@ export default async function Article({
         </p>
         <div className="article-image">
           <Image
-            src={slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
-            alt={slug === "custom-african-print-dresses-agona-swedru" ? "Woman wearing an African print skirt and red cardigan, featured in Wear Mega-E fashion blog" : gallery.find((d) => d.slug === p.image)!.images[0].alt}
+            src={slug === "corporate-wear-for-women-ghana" ? "/images/womens-tailoring-services-agona-swedru.jpg" : slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
+            alt={slug === "corporate-wear-for-women-ghana" ? "Woman wearing an orange patterned corporate midi dress in a modern office, office fashion inspiration for Wear Mega-E" : slug === "custom-african-print-dresses-agona-swedru" ? "Woman wearing an African print skirt and red cardigan, featured in Wear Mega-E fashion blog" : gallery.find((d) => d.slug === p.image)!.images[0].alt}
             fill
             priority
             sizes="(max-width:900px) 90vw, 850px"
@@ -54,6 +54,20 @@ export default async function Article({
             <section key={h}>
               <h2>{h}</h2>
               <p><ArticleText text={t}/></p>
+              {slug === "corporate-wear-for-women-ghana" && [2, 4, 6].includes(index) && (
+                <figure style={{ margin: "28px 0 16px" }}>
+                  <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: 10 }}>
+                    <Image
+                      src={index === 2 ? "/images/custom-dress-fitting-agona-swedru.jpg" : index === 4 ? "/images/fashion-design-studio-agona-swedru-wear-mega-e.jpg" : "/images/wear-mega-e-fashion-brand-agona-swedru.jpg"}
+                      alt={index === 2 ? "Patterned corporate blazer with black trousers for women's office fashion inspiration" : index === 4 ? "Mint green corporate midi dress with bell sleeves" : "Navy blue corporate skirt suit with contrasting blue collar"}
+                      fill
+                      sizes="(max-width: 760px) 90vw, 710px"
+                      style={{ objectFit: "contain", background: "#f6f2ec" }}
+                    />
+                  </div>
+                  <figcaption style={{ color: "var(--muted)", fontSize: 12, marginTop: 10 }}>Corporate wear style inspiration. Ask Wear Mega-E about a custom interpretation.</figcaption>
+                </figure>
+              )}
               {slug === "custom-african-print-dresses-agona-swedru" && index < 4 && (
                 <figure style={{ margin: "28px 0 8px" }}>
                   <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", background: "var(--cream)" }}>
@@ -106,7 +120,7 @@ export default async function Article({
           dateModified: p.updated || p.date,
           author: { "@type": "Organization", name: p.author },
           publisher: { "@type": "Organization", name: site.name },
-          image: site.url + (slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : "/images/" + p.image + ".webp"),
+          image: site.url + (slug === "corporate-wear-for-women-ghana" ? "/images/womens-tailoring-services-agona-swedru.jpg" : slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : "/images/" + p.image + ".webp"),
           mainEntityOfPage: site.url + "/blog/" + slug,
         }}
       />
