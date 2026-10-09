@@ -176,7 +176,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="wrap section"><p className="eyebrow">WOMEN’S TAILORING IN AGONA SWEDRU</p><h2>Find your next outfit.</h2><div className="service-grid">{localServices.map(service=><Link className="service-card" key={service.slug} href={`/${service.slug}`}><h3>{service.title}</h3><p>{service.description}</p><span className="text-link">Explore this service ↗</span></Link>)}</div><p style={{marginTop:24}}>Based in Agona Swedru, Ghana. Call <a href="tel:+233261939295">0261939295</a> or <Link href="/contact">contact the studio</Link> to confirm directions and fitting appointments.</p></section>
+      <section className="wrap section"><p className="eyebrow">WOMEN’S TAILORING IN AGONA SWEDRU</p><h2>Find your next outfit.</h2><div className="service-grid">{localServices.map(service=><Link className="service-card" key={service.slug} href={`/${service.slug}`}><h3>{service.title}</h3><p>{service.description}</p><span className="text-link">Explore this service ↗</span></Link>)}</div><p style={{marginTop:24}}>Based in Agona Swedru, Ghana. Call <a href="tel:+233540688307">0540688307</a> or <Link href="/contact">contact the studio</Link> to confirm directions and fitting appointments.</p></section>
       <CTA />
     </>
   );
