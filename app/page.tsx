@@ -162,7 +162,7 @@ export default function Home() {
             <Link href={`/blog/${p.slug}`} key={p.slug} className="blog-card">
               <div className="blog-image">
                 <Image
-                  src={p.slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
+                  src={p.slug === "corporate-wear-for-women-ghana" ? "/images/womens-tailoring-services-agona-swedru.jpg" : p.slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
                   alt={gallery.find((d) => d.slug === p.image)?.images[0].alt || p.title}
                   fill
                   sizes="(max-width:700px) 90vw, 30vw"
