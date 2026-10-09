@@ -9,7 +9,7 @@ export const site = {
 export const socialLinks = {
   facebook: "https://www.facebook.com/profile.php?id=100087323353556",
   instagram: "https://www.instagram.com/wearmega_e?obrf=OHY2dmY3dmpna3I0&utm_source=qr",
-  tiktok: "",
+  tiktok: "https://www.tiktok.com/@wearmegae?_r=1&_t=ZS-9APZHflC6qe",
   youtube: "",
   linkedin: "",
   pinterest: "",
