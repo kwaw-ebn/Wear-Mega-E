@@ -4,7 +4,7 @@ import { Socials } from "@/components/chrome";
 import { seo, site, whatsapp } from "@/lib/site";
 export const metadata = seo(
   "Contact Wear Mega-E",
-  "Call 0261939295 or chat with Wear Mega-E on WhatsApp to discuss your next outfit, occasion or custom design.",
+  "Visit Wear Mega-E at Nfomaanu Street, Otabiikrom, Agona Swedru. Call 0261939295, email wearmega6@gmail.com or chat on WhatsApp.",
   "/contact",
 );
 export default function Contact() {
@@ -35,8 +35,8 @@ export default function Contact() {
           <div className="contact-details">
             <h3>Visiting & appointments</h3>
             <p>
-              Our studio is in Agona Swedru, Ghana. Please call or message for
-              the exact directions and to confirm appointment availability.
+              Find us on Nfomaanu Street, Otabiikrom, Agona Swedru, Ghana.
+              Please call or message to confirm directions and appointment availability.
             </p>
             <h3>What to include in your enquiry</h3>
             <p>Share the design name or reference photo, your occasion date,
@@ -69,6 +69,29 @@ export default function Contact() {
           </p>
           <ContactForm />
         </div>
+      </section>
+      <section className="wrap section" aria-labelledby="studio-location-heading">
+        <p className="eyebrow">FIND OUR STUDIO</p>
+        <h2 id="studio-location-heading">Visit Wear Mega-E in Agona Swedru.</h2>
+        <p>Nfomaanu Street, Otabiikrom, Agona Swedru, Central Region, Ghana.</p>
+        <div style={{ width: "100%", borderRadius: 12, overflow: "hidden", background: "var(--cream)" }}>
+          <iframe
+            title="Map of Nfomaanu Street, Otabiikrom, Agona Swedru"
+            src="https://www.google.com/maps?q=Nfomaanu%20Street%2C%20Otabiikrom%2C%20Agona%20Swedru%2C%20Ghana&output=embed"
+            width="100%"
+            height="420"
+            style={{ border: 0, display: "block" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+        <p style={{ marginTop: 20 }}>
+          <a className="text-link" href="https://www.google.com/maps/search/?api=1&query=Nfomaanu%20Street%2C%20Otabiikrom%2C%20Agona%20Swedru%2C%20Ghana" target="_blank" rel="noopener noreferrer">
+            Open in Google Maps ↗
+          </a>
+        </p>
+        <p className="small">Map search results may be approximate. Contact us to confirm the exact studio entrance before visiting.</p>
       </section>
     </>
   );
