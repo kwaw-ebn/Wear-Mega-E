@@ -40,7 +40,7 @@ export default function BlogBrowser({ posts }: { posts: PostSummary[] }) {
           <Link key={p.slug} href={`/blog/${p.slug}`} className="blog-card">
             <div className="blog-image">
               <Image
-                src={p.slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
+                src={p.slug === "corporate-wear-for-women-ghana" ? "/images/womens-tailoring-services-agona-swedru.jpg" : p.slug === "custom-african-print-dresses-agona-swedru" ? "/images/wear-mega-e-blog-illustration-1.webp" : `/images/${p.image}.webp`}
                 alt={p.imageAlt}
                 fill
                 sizes="(max-width:700px) 90vw, 30vw"
