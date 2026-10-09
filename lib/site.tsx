@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 export const site = {
   name: "Wear Mega-E",
   tagline: "You Decide, We Design",
-  phone: "0261939295",
+  phone: "0540688307",
   email: "wearmega6@gmail.com",
-  international: "+233261939295",
+  international: "+233540688307",
+  whatsappPhone: "0261939295",
   url: (process.env.SITE_URL || "https://wear-mega-e.onrender.com").replace(/\/$/, ""),
 };
 export const socialLinks = {
