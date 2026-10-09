@@ -8,7 +8,7 @@ export const site = {
 };
 export const socialLinks = {
   facebook: "https://www.facebook.com/profile.php?id=100087323353556",
-  instagram: "https://www.instagram.com/peggy_gyan/",
+  instagram: "https://www.instagram.com/wearmega_e/",
   tiktok: "",
   youtube: "",
   linkedin: "",
