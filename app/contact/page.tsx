@@ -4,7 +4,7 @@ import { Socials } from "@/components/chrome";
 import { seo, site, whatsapp } from "@/lib/site";
 export const metadata = seo(
   "Contact Wear Mega-E",
-  "Visit Wear Mega-E at Nfomaanu Street, Otabiikrom, Agona Swedru. Call 0261939295, email wearmega6@gmail.com or chat on WhatsApp.",
+  "Visit Wear Mega-E at Nfomaanu Street, Otabiikrom, Agona Swedru. Call 0540688307, email wearmega6@gmail.com or chat on WhatsApp.",
   "/contact",
 );
 export default function Contact() {
@@ -31,7 +31,7 @@ export default function Contact() {
             {site.phone}
           </a>
           <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
-          <Button href={whatsapp()}>Chat on WhatsApp</Button>
+          <Button href={whatsapp()}>WhatsApp: 0261939295</Button>
           <div className="contact-details">
             <h3>Visiting & appointments</h3>
             <p>
@@ -45,7 +45,7 @@ export default function Contact() {
             For uniforms, include the approved style requirements before sewing
             is discussed.</p>
             <h3>Before you visit</h3>
-            <p>Call 0261939295 or message on WhatsApp to confirm the studio’s
+            <p>Call 0540688307 or message on WhatsApp to confirm the studio’s
             directions, opening hours and a suitable appointment. Bring your
             inspiration photos and any fabric you would like us to assess.
             For a long gown, the shoes you intend to wear can help with hem
